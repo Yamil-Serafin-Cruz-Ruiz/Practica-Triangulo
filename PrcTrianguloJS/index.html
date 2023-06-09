@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triangulo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-master">
+        <Section class="container">
+            <div>
+                <img src="./Src/T.jpg" alt="Triangulo">
+            </div>
+            <div>
+                <label for="l1"> Lado 1</label>
+                <input type="number" name="l1" id="l1" placeholder="Lado 1" onblur="captura1()">
+            </div>
+            <div>
+                <label for="l2"> Lado 2</label>
+                <input type="number" name="l2" id="l2" placeholder="Lado 2" onblur="captura2()">
+            </div>
+            <div>
+                <label for="l3"> Lado 3</label>
+                <input type="number" name="l3" id="l3" placeholder="Lado 3" onblur="captura3()">
+            </div>
+            <div class="container-btn">
+                <input type="button" value="Perimetro" onclick="perimetro()">
+                <input type="button" value="Área" onclick="area()">
+                <input type="button" value="Tipo" onclick="tiptri()">
+                <input type="button" value="C" onclick="limpiar()">
+            </div>
+            <p><h2 id="resul">El resultado es: </h2></p>
+            <div id="historial-Div"></div>
+        </Section>
+    </div>
+    <script src="tools.js"></script>
+</body>
+</html>
